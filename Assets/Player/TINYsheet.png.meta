@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: a02d0530d51cea5449513dbe3e51466d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8373041815355331681
+    second: TINYsheet_0
+  - first:
+      213: -4158712659298441036
+    second: TINYsheet_1
+  - first:
+      213: 5850770680225063002
+    second: TINYsheet_2
+  - first:
+      213: 3728881470654655320
+    second: TINYsheet_3
+  - first:
+      213: -2248733087897720604
+    second: TINYsheet_4
+  - first:
+      213: 8005197682040481275
+    second: TINYsheet_5
+  - first:
+      213: 504882007285399576
+    second: TINYsheet_6
+  - first:
+      213: 7103648391220773763
+    second: TINYsheet_7
+  - first:
+      213: -2733212769256845526
+    second: TINYsheet_8
+  - first:
+      213: -7520696256474213533
+    second: TINYsheet_9
+  - first:
+      213: -1339031814721315605
+    second: TINYsheet_10
+  - first:
+      213: -7729265856863668376
+    second: TINYsheet_11
+  - first:
+      213: -5498146609655014058
+    second: TINYsheet_12
+  - first:
+      213: 3446800754546546215
+    second: TINYsheet_13
+  - first:
+      213: 3955071379601602127
+    second: TINYsheet_14
+  - first:
+      213: -1572353240270968870
+    second: TINYsheet_15
+  - first:
+      213: -8589040158259216193
+    second: TINYsheet_16
+  - first:
+      213: 9098831704739211060
+    second: TINYsheet_17
+  - first:
+      213: 1101156504742387422
+    second: TINYsheet_18
+  - first:
+      213: -8821059228440529931
+    second: TINYsheet_19
+  - first:
+      213: 4724591011211452773
+    second: TINYsheet_20
+  - first:
+      213: -1962665872597139862
+    second: TINYsheet_21
+  - first:
+      213: -5996808460851551283
+    second: TINYsheet_22
+  - first:
+      213: 772363776687742647
+    second: TINYsheet_23
+  - first:
+      213: -2573345337101555036
+    second: TINYsheet_24
+  - first:
+      213: 5980192800360948084
+    second: TINYsheet_25
+  - first:
+      213: 2941011349156387087
+    second: TINYsheet_26
+  - first:
+      213: -1755704202994057773
+    second: TINYsheet_27
+  - first:
+      213: 1717155767107951983
+    second: TINYsheet_28
+  - first:
+      213: -2878579203015652667
+    second: TINYsheet_29
+  - first:
+      213: 7265778245567991688
+    second: TINYsheet_30
+  - first:
+      213: 8540852935422092425
+    second: TINYsheet_31
+  - first:
+      213: 5566252747956080279
+    second: TINYsheet_32
+  - first:
+      213: 6317427628538222027
+    second: TINYsheet_33
+  - first:
+      213: 5803392383721600670
+    second: TINYsheet_34
+  - first:
+      213: -3668950274937192839
+    second: TINYsheet_35
+  - first:
+      213: -7405705327395942664
+    second: TINYsheet_36
+  - first:
+      213: 7574556580693147567
+    second: TINYsheet_37
+  - first:
+      213: 5820901641261656545
+    second: TINYsheet_38
+  - first:
+      213: 4628262200531914468
+    second: TINYsheet_39
+  - first:
+      213: 4661838924469741858
+    second: TINYsheet_40
+  - first:
+      213: 3447404218515371131
+    second: TINYsheet_41
+  - first:
+      213: 29748986023719828
+    second: TINYsheet_42
+  - first:
+      213: -717170875124568505
+    second: TINYsheet_43
+  - first:
+      213: -575654578930944331
+    second: TINYsheet_44
+  - first:
+      213: -253226293102764815
+    second: TINYsheet_45
+  - first:
+      213: -672508346313646024
+    second: TINYsheet_46
+  - first:
+      213: -9039904226132123731
+    second: TINYsheet_47
+  - first:
+      213: -3612601136858998615
+    second: TINYsheet_48
+  - first:
+      213: 3283466808597278521
+    second: TINYsheet_49
+  - first:
+      213: 3574773325259155400
+    second: TINYsheet_50
+  - first:
+      213: -1578178601168136853
+    second: TINYsheet_51
+  - first:
+      213: -6789791659801381885
+    second: TINYsheet_52
+  - first:
+      213: -6933504482040573102
+    second: TINYsheet_53
+  - first:
+      213: -2954734682743755194
+    second: TINYsheet_54
+  - first:
+      213: 1031097324737397788
+    second: TINYsheet_55
+  - first:
+      213: 6293708377503406006
+    second: TINYsheet_56
+  - first:
+      213: 7939201406018761120
+    second: TINYsheet_57
+  - first:
+      213: 7848617864782514235
+    second: TINYsheet_58
+  - first:
+      213: -3458255008417346798
+    second: TINYsheet_59
+  - first:
+      213: -175074471159925570
+    second: TINYsheet_60
+  - first:
+      213: 4126553815118885942
+    second: TINYsheet_61
+  - first:
+      213: 4704839999364856138
+    second: TINYsheet_62
+  - first:
+      213: 7699969198118378309
+    second: TINYsheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TINYsheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 223
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1641fb53b25033470800000000000000
+      internalID: 8373041815355331681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 223
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8a893ced84946c0800000000000000
+      internalID: -4158712659298441036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 223
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50e5195fec123150800000000000000
+      internalID: 5850770680225063002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 223
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b28ebe0f5afb330800000000000000
+      internalID: 3728881470654655320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_4
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 223
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8603dbb25eac0e0800000000000000
+      internalID: -2248733087897720604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_5
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 223
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5adc2e0ec281f60800000000000000
+      internalID: 8005197682040481275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_6
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 223
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8108bb9b283b10700800000000000000
+      internalID: 504882007285399576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_7
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 223
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3834df7339a359260800000000000000
+      internalID: 7103648391220773763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 179
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f42e0b77da11ad0800000000000000
+      internalID: -2733212769256845526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_9
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 180
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3639e31e99e11a790800000000000000
+      internalID: -7520696256474213533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 183
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becd694b8adca6de0800000000000000
+      internalID: -1339031814721315605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_11
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 181
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867f51397a12cb490800000000000000
+      internalID: -7729265856863668376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 180
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d9e78f9c8a2b3b0800000000000000
+      internalID: -5498146609655014058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_13
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 179
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7269b4a360f75df20800000000000000
+      internalID: 3446800754546546215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_14
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 180
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46b772077c33e630800000000000000
+      internalID: 3955071379601602127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_15
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 183
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7e6340f01ed2ae0800000000000000
+      internalID: -1572353240270968870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_16
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 181
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb005659b799dc880800000000000000
+      internalID: -8589040158259216193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_17
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 180
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437ea005a3b854e70800000000000000
+      internalID: 9098831704739211060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 134
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eded743c108184f00800000000000000
+      internalID: 1101156504742387422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 134
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3fe122e5d459580800000000000000
+      internalID: -8821059228440529931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_20
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 134
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56123442e7e119140800000000000000
+      internalID: 4724591011211452773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_21
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 134
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eb01b99c533c4e0800000000000000
+      internalID: -1962665872597139862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_22
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 134
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3e2e03a7e07cca0800000000000000
+      internalID: -5996808460851551283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_23
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 89
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be1ad243ccf7ba00800000000000000
+      internalID: 772363776687742647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_24
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 89
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa67a1dc04a94cd0800000000000000
+      internalID: -2573345337101555036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 89
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471ecd1eaa9edf250800000000000000
+      internalID: 5980192800360948084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_26
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 89
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09dbda6d3290d820800000000000000
+      internalID: 2941011349156387087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_27
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 89
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddf0e9545c72a7e0800000000000000
+      internalID: -1755704202994057773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_28
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d9b72821094d710800000000000000
+      internalID: 1717155767107951983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cacc6a577b3d08d0800000000000000
+      internalID: -2878579203015652667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f47df81da35d460800000000000000
+      internalID: 7265778245567991688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_31
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984afae4e74378670800000000000000
+      internalID: 8540852935422092425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_32
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ec6fb026d4f3d40800000000000000
+      internalID: 5566252747956080279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5524df4f20ca750800000000000000
+      internalID: 6317427628538222027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_34
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96fee310aac98050800000000000000
+      internalID: 5803392383721600670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_35
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97efbc3f925451dc0800000000000000
+      internalID: -3668950274937192839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_36
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fec859ed36a93990800000000000000
+      internalID: -7405705327395942664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_37
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 3
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafff43141b3e1960800000000000000
+      internalID: 7574556580693147567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_38
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 3
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9a3e7c33ff7c050800000000000000
+      internalID: 5820901641261656545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_39
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee821623f3ea3040800000000000000
+      internalID: 4628262200531914468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_40
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229ab156dcd22b040800000000000000
+      internalID: 4661838924469741858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_41
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 3
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74bac12fd3a7df20800000000000000
+      internalID: 3447404218515371131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_42
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 3
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4933f509b80b96000800000000000000
+      internalID: 29748986023719828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_43
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 3
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ea1f883e81c06f0800000000000000
+      internalID: -717170875124568505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_44
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b67e7dd53dd208f0800000000000000
+      internalID: -575654578930944331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_45
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 3
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc12df270c5c7cf0800000000000000
+      internalID: -253226293102764815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_46
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 3
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8306d7dd835caa6f0800000000000000
+      internalID: -672508346313646024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_47
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 3
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf97d5700fcb8280800000000000000
+      internalID: -9039904226132123731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_48
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 3
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8d85a08667dddc0800000000000000
+      internalID: -3612601136858998615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_49
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 3
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fe9367aa7319d20800000000000000
+      internalID: 3283466808597278521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_50
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 3
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c72d9c36652c9130800000000000000
+      internalID: 3574773325259155400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_51
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 3
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65104d7cee291ae0800000000000000
+      internalID: -1578178601168136853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_52
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 3
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304f0a29570d5c1a0800000000000000
+      internalID: -6789791659801381885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_53
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253946ba86e37cf90800000000000000
+      internalID: -6933504482040573102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_54
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 3
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e288df57caef6d0800000000000000
+      internalID: -2954734682743755194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_55
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 3
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1404d9cd813f4e00800000000000000
+      internalID: 1031097324737397788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_56
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 3
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b79df08c6eb75750800000000000000
+      internalID: 6293708377503406006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_57
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 3
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1b7067d95bd2e60800000000000000
+      internalID: 7939201406018761120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_58
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3885204d54ebec60800000000000000
+      internalID: 7848617864782514235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_59
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 3
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b8198746fc100d0800000000000000
+      internalID: -3458255008417346798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_60
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 3
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4f54132b2029df0800000000000000
+      internalID: -175074471159925570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_61
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 3
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634b1b8d4d6744930800000000000000
+      internalID: 4126553815118885942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_62
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 3
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49f0375d03fa4140800000000000000
+      internalID: 4704839999364856138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TINYsheet_63
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 3
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b9b438039cbda60800000000000000
+      internalID: 7699969198118378309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TINYsheet_0: 8373041815355331681
+      TINYsheet_1: -4158712659298441036
+      TINYsheet_10: -1339031814721315605
+      TINYsheet_11: -7729265856863668376
+      TINYsheet_12: -5498146609655014058
+      TINYsheet_13: 3446800754546546215
+      TINYsheet_14: 3955071379601602127
+      TINYsheet_15: -1572353240270968870
+      TINYsheet_16: -8589040158259216193
+      TINYsheet_17: 9098831704739211060
+      TINYsheet_18: 1101156504742387422
+      TINYsheet_19: -8821059228440529931
+      TINYsheet_2: 5850770680225063002
+      TINYsheet_20: 4724591011211452773
+      TINYsheet_21: -1962665872597139862
+      TINYsheet_22: -5996808460851551283
+      TINYsheet_23: 772363776687742647
+      TINYsheet_24: -2573345337101555036
+      TINYsheet_25: 5980192800360948084
+      TINYsheet_26: 2941011349156387087
+      TINYsheet_27: -1755704202994057773
+      TINYsheet_28: 1717155767107951983
+      TINYsheet_29: -2878579203015652667
+      TINYsheet_3: 3728881470654655320
+      TINYsheet_30: 7265778245567991688
+      TINYsheet_31: 8540852935422092425
+      TINYsheet_32: 5566252747956080279
+      TINYsheet_33: 6317427628538222027
+      TINYsheet_34: 5803392383721600670
+      TINYsheet_35: -3668950274937192839
+      TINYsheet_36: -7405705327395942664
+      TINYsheet_37: 7574556580693147567
+      TINYsheet_38: 5820901641261656545
+      TINYsheet_39: 4628262200531914468
+      TINYsheet_4: -2248733087897720604
+      TINYsheet_40: 4661838924469741858
+      TINYsheet_41: 3447404218515371131
+      TINYsheet_42: 29748986023719828
+      TINYsheet_43: -717170875124568505
+      TINYsheet_44: -575654578930944331
+      TINYsheet_45: -253226293102764815
+      TINYsheet_46: -672508346313646024
+      TINYsheet_47: -9039904226132123731
+      TINYsheet_48: -3612601136858998615
+      TINYsheet_49: 3283466808597278521
+      TINYsheet_5: 8005197682040481275
+      TINYsheet_50: 3574773325259155400
+      TINYsheet_51: -1578178601168136853
+      TINYsheet_52: -6789791659801381885
+      TINYsheet_53: -6933504482040573102
+      TINYsheet_54: -2954734682743755194
+      TINYsheet_55: 1031097324737397788
+      TINYsheet_56: 6293708377503406006
+      TINYsheet_57: 7939201406018761120
+      TINYsheet_58: 7848617864782514235
+      TINYsheet_59: -3458255008417346798
+      TINYsheet_6: 504882007285399576
+      TINYsheet_60: -175074471159925570
+      TINYsheet_61: 4126553815118885942
+      TINYsheet_62: 4704839999364856138
+      TINYsheet_63: 7699969198118378309
+      TINYsheet_7: 7103648391220773763
+      TINYsheet_8: -2733212769256845526
+      TINYsheet_9: -7520696256474213533
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
