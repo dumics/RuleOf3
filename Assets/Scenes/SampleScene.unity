@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &32036523
+--- !u!43 &95879460
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1477,12 +1477,12 @@ MonoBehaviour:
   - prefab: {fileID: 2806646386084080588, guid: c0b111f3397b71949b8c5cdea78d19df, type: 3}
     spawnY: 0
     spawnZ: 10
-    moveSpeed: 4
+    moveSpeed: 1
     lastSpawned: {fileID: 0}
   - prefab: {fileID: 8144675984015823348, guid: 4405683ac5eeb1745804abf3cfaa36b9, type: 3}
     spawnY: 0
     spawnZ: 5
-    moveSpeed: 3
+    moveSpeed: 1.5
     lastSpawned: {fileID: 0}
   - prefab: {fileID: 4273212654923290745, guid: 6e81bf4a8c3bfd84fb1dd42fda6066d1, type: 3}
     spawnY: -5.5

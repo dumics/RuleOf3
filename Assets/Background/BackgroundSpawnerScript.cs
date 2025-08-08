@@ -53,6 +53,8 @@ public class BackgroundSpawnerScript : MonoBehaviour
             moveScript.moveSpeed = bg.moveSpeed;
         }
 
+        piece.transform.position = spawnPos;
+
         return piece;
     }
 }

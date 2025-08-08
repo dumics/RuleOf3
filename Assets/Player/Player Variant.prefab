@@ -105,9 +105,17 @@ PrefabInstance:
       value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7908742418251338221, guid: bc5f13d89133d4343893de50c246f599, type: 3}
+      propertyPath: _backWallCheckPoint
+      value: 
+      objectReference: {fileID: 4219738520640006904, guid: b264b1470e864a245ab9d153260a7aea, type: 3}
+    - target: {fileID: 7908742418251338221, guid: bc5f13d89133d4343893de50c246f599, type: 3}
       propertyPath: _groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7908742418251338221, guid: bc5f13d89133d4343893de50c246f599, type: 3}
+      propertyPath: _frontWallCheckPoint
+      value: 
+      objectReference: {fileID: 9167105524737873498, guid: a696b271d56d1fd4b97ab066fbf87e2c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
