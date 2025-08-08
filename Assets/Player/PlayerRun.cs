@@ -89,8 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
-        animator.SetBool("jumpUp", IsJumping); 
+        animator.SetBool("jumpUp", IsJumping);
         animator.SetBool("jumpDown", _isJumpFalling);
         animator.SetBool("dash", IsDashing);
 
@@ -178,7 +177,6 @@ public class PlayerMovement : MonoBehaviour
             //Jump
             if (CanJump() && LastPressedJumpTime > 0)
             {
-                
                 IsJumping = true;
                 IsWallJumping = false;
                 _isJumpCut = false;
@@ -419,13 +417,9 @@ public class PlayerMovement : MonoBehaviour
         //(setting the player's Y velocity to 0 beforehand will likely work the same, but I find this more elegant :D)
         float force = Data.jumpForce;
         if (RB.linearVelocity.y < 0)
-        {
             force -= RB.linearVelocity.y;
-           
-        }
-               
-        RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
 
+        RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
         #endregion
     }
 
