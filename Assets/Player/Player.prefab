@@ -346,6 +346,9 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  jumpSound: {fileID: 8300000, guid: c673b586d54e2f34484acc87e2e7ab21, type: 3}
+  deadSound: {fileID: 8300000, guid: e8f77964ef8d9a64098f6aec2eb53b1b, type: 3}
+  dashSound: {fileID: 8300000, guid: cec7c44c066a1414388f6be17eb8c83a, type: 3}
 --- !u!212 &5564769951408084928 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3626916397498700004, guid: acd158258aaa4104c9b2bfda8769ddcb, type: 3}
