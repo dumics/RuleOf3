@@ -4,7 +4,8 @@ public class GameOverScript : MonoBehaviour
 {
     public enum GameOverReason
     {
-        LeftBorder
+        LeftBorder,
+        FlyKill
     }
 
     public GameOverReason reason;

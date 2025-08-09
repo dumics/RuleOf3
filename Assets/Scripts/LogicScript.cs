@@ -85,7 +85,12 @@ public class LogicScript : MonoBehaviour
         {
             case GameOverScript.GameOverReason.LeftBorder:
 
-                infoText= "The player is out.";
+                infoText= "The player is fell out.";
+                break;
+
+            case GameOverScript.GameOverReason.FlyKill:
+
+                infoText = "The player is killed by fly.";
                 break;
         }
 

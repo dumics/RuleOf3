@@ -18,10 +18,10 @@ public class StarScript : MonoBehaviour
     {
         if(other.gameObject.layer == 6)
         { 
+            Destroy(gameObject);
             logic.addScore(3);
             SoundManager.instance.PlaySound(starCollectedSound);
             //animator.SetTrigger("Collected");
-            Destroy(gameObject,0.1f);
         }
     }
 }

@@ -9,7 +9,7 @@ public class BlockSpawnerScript : MonoBehaviour
     public List<GameObject> blockPrefabs;
     public GameObject starPrefab;
     public float starSpawnChance = 0.4f;
-    public float starOffsetY = 0.5f;
+    public float starOffsetY = 1.5f;
 
     [Header("Spawning Timing")]
     public float spawnRate = 2f;
@@ -19,7 +19,7 @@ public class BlockSpawnerScript : MonoBehaviour
 
     [Header("Block's speed")]
     public float blockSpeed = 5f;
-    public float maxBlockSpeed = 15f;
+    public float maxBlockSpeed = 25f;
 
     
     private float timer = 0f;
@@ -81,30 +81,31 @@ public class BlockSpawnerScript : MonoBehaviour
         int randomIndex = Random.Range(0, blockPrefabs.Count);
         GameObject prefab = blockPrefabs[randomIndex];
 
-        
-        float scaleX = Random.Range(0.3f, 0.45f);
-        float scaleY = Random.Range(0.4f, 0.5f);
-        float offsetX = (scaleX > 0.4f) ? 0.15f : 0f;
+        BlockMoveScript blockMoveScript = prefab.GetComponent<BlockMoveScript>();
 
+        float scale = Random.Range(blockMoveScript.minSize, blockMoveScript.maxSize);
+        
         BlockMoveScript moveScript = prefab.GetComponent<BlockMoveScript>();
         moveScript.moveSpeed = blockSpeed;
 
         Vector3 spawnPosition = new Vector3(basePosition.x, basePosition.y, basePosition.z);
         GameObject instance = Instantiate(prefab, spawnPosition, Quaternion.identity);
-
         
-        float[] angles = { 0f, 15f, 30f, 45f, 60f };
-        float randomZRotation = angles[Random.Range(0, angles.Length)];
+        if (!instance.CompareTag("Enemy"))
+        {
+            float[] angles = { 0f, 15f, 30f, 45f, 60f };
+            float randomZRotation = angles[Random.Range(0, angles.Length)];
+            instance.transform.rotation = Quaternion.Euler(0f, 0f, randomZRotation);
+        }
 
+        instance.transform.localScale = new Vector3(scale, scale, 1f);
 
-        instance.transform.rotation = Quaternion.Euler(0f, 0f, randomZRotation);
-        instance.transform.localScale = new Vector3(scaleX, scaleX, 1f);
-
+        #region Star Spawn
         if (starPrefab != null && Random.value < starSpawnChance)
         {
             Vector3 starPosition = new Vector3(
                 instance.transform.position.x,
-                instance.transform.position.y + (scaleX * 0.5f) + starOffsetY,
+                instance.transform.position.y + (scale * 0.5f) + starOffsetY,
                 instance.transform.position.z
             );
 
@@ -112,6 +113,7 @@ public class BlockSpawnerScript : MonoBehaviour
             BlockMoveScript starMoveScript = starPrefab.GetComponent<BlockMoveScript>();
             starMoveScript.moveSpeed = blockSpeed;
         }
+        #endregion
 
     }
 
