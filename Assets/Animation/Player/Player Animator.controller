@@ -36,6 +36,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 4
     m_ConditionEvent: jump
     m_EventTreshold: 0.01
+  - m_ConditionMode: 2
+    m_ConditionEvent: attack
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3803160101720098349}
   m_Solo: 0
@@ -105,7 +108,7 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 250, y: -440, z: 0}
+  m_AnyStatePosition: {x: 240, y: -380, z: 0}
   m_EntryPosition: {x: 20, y: -50, z: 0}
   m_ExitPosition: {x: 1000, y: 240, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -120,6 +123,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: grounded
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: attack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4614753567638920366}
