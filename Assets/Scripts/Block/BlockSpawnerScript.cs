@@ -9,7 +9,7 @@ public class BlockSpawnerScript : MonoBehaviour
     [Header("Block & Star")]
     public List<GameObject> blockPrefabs;
     public GameObject starPrefab;
-    public float starSpawnChance = 0.4f;
+    public float starSpawnChance = 0.3f; // 30%
     public float starOffsetY = 1.5f;
 
     [Header("Spawning Timing")]

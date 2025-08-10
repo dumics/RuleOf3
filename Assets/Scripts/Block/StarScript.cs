@@ -4,6 +4,8 @@ using UnityEngine;
 public class StarScript : MonoBehaviour
 {
 
+    public int starAward = 30;
+
     public LogicScript logic;
     public Animator animator;
 
@@ -19,7 +21,7 @@ public class StarScript : MonoBehaviour
         if(other.gameObject.layer == 6)
         { 
             Destroy(gameObject);
-            logic.addScore(3);
+            logic.addScore(starAward);
             SoundManager.instance.PlaySound(starCollectedSound);
             //animator.SetTrigger("Collected");
         }

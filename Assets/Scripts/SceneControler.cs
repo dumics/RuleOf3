@@ -19,7 +19,7 @@ public class SceneControler : MonoBehaviour
         }
     }
 
-    public void LoadSceneByIndex(int index)
+    public static void LoadSceneByIndex(int index)
     {
         SceneManager.LoadSceneAsync(index);
     }

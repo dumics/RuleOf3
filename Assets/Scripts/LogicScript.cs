@@ -126,6 +126,8 @@ public class LogicScript : MonoBehaviour
 
     public void RestartGame()
     {
+
+        Debug.Log("Function called!!");
         gameOver = false;
 
         blockSpawnerInstance.GetComponent<BlockSpawnerScript>().StartSpawner();

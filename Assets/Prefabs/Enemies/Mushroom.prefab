@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   pointsAward: 10
-  damage: 5
+  damage: 10
   moveSpeed: 3
   knockbackForce: 10
   knockbackDuration: 1

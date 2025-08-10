@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 61d019c237b5a8f4a82433d61db9993d
+guid: 37d7f17abfec53f4a906eb6c92a74bab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1843197933104017171
-    second: square_0
+      213: 952119879484184212
+    second: dead_page_0
+  - first:
+      213: 6413339013644357325
+    second: dead_page_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: square_0
+      name: dead_page_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 225
+        width: 459
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de0d99ade35ab66e0800000000000000
-      internalID: -1843197933104017171
+      spriteID: 4961e306cfb963d00800000000000000
+      internalID: 952119879484184212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_page_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 0
+        width: 456
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce0d648ad1c00950800000000000000
+      internalID: 6413339013644357325
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      square_0: -1843197933104017171
+      dead_page_0: 952119879484184212
+      dead_page_1: 6413339013644357325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

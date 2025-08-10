@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6913682182299053691}
   - component: {fileID: 5548747589581265550}
   - component: {fileID: 927265582993566452}
+  - component: {fileID: 799149904377049336}
   m_Layer: 0
   m_Name: Star_0
   m_TagString: Untagged
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0ad83ecb72d51418384e98d1050004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starAward: 0
   logic: {fileID: 0}
   animator: {fileID: 0}
   starCollectedSound: {fileID: 8300000, guid: dbad5b0b0a97ba74da3b2b32caa90943, type: 3}
@@ -222,3 +224,25 @@ MonoBehaviour:
   deadZone: -10
   minSize: 0
   maxSize: 0
+--- !u!95 &799149904377049336
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706054345480000102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63547e2840b23a64fafc4c7ac770f629, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
