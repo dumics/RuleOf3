@@ -5,7 +5,8 @@ public class GameOverScript : MonoBehaviour
     public enum GameOverReason
     {
         LeftBorder,
-        FlyKill
+        FlyKill,
+        OutOfHealth
     }
 
     public GameOverReason reason;

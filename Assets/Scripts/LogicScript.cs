@@ -17,12 +17,16 @@ public class LogicScript : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
 
-
     private bool gameOver = false;
     private float gameTime = 0f;
 
+    private GameObject player;
+    private PlMov2 playerSC;
+
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerSC = player.GetComponent<PlMov2>();
         highScore = PlayerPrefs.GetInt("HighScore");
 
         highScoreText.text = "HighScore: " + highScore.ToString();
@@ -67,17 +71,7 @@ public class LogicScript : MonoBehaviour
 
         if (blockSpawner != null) blockSpawner.StopSpawner();
 
-
-        var player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-        {
-            var scr = player.GetComponent<PlayerMovement>();
-            if (scr != null) 
-            {
-                scr.StopPlayer();
-            }
-        }
+        //PlMov2 playerSC = player.GetComponent<PlMov2>();
 
         string infoText = "";
 
@@ -86,11 +80,17 @@ public class LogicScript : MonoBehaviour
             case GameOverScript.GameOverReason.LeftBorder:
 
                 infoText= "The player is fell out.";
+                playerSC.TakeDamage(100); 
                 break;
 
             case GameOverScript.GameOverReason.FlyKill:
 
                 infoText = "The player is killed by fly.";
+                break;
+
+            case GameOverScript.GameOverReason.OutOfHealth:
+
+                infoText = "The player is out of health.";
                 break;
         }
 
@@ -103,25 +103,17 @@ public class LogicScript : MonoBehaviour
             else if (t.name == "HighScore") t.text = "HighScore: " + PlayerPrefs.GetInt("HighScore", playerScore).ToString();
         }
 
+        
+
     }
 
     public void RestartGame()
     {
         gameOver = false;
+        
         blockSpawner.StartSpawner();
+        playerSC.RestartPlayer();
 
-        var player = GameObject.FindGameObjectWithTag("Player");
-        Vector3 spawnPosition = new Vector3(-5, -4, 1);
-        player.transform.position = spawnPosition;
-
-        if (player != null)
-        {
-            var scr = player.GetComponent<PlayerMovement>();
-            if (scr != null)
-            {
-                scr.RestartPlayer();
-            }
-        }
         gameOverPanel.SetActive(false);
         gameTime = 0f;
         playerScore = 0;
