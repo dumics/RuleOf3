@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 2503892822816408232, guid: d19bc81fcb7038140a82ac7b67817292, type: 3}
   - {fileID: 776492317987611916, guid: 5d2ac2279a0c95141878e807c3d54623, type: 3}
   - {fileID: 7442917853013040222, guid: c4507a2e164899e46a32cd2bdc38716a, type: 3}
+  - {fileID: 7354661838552856982, guid: 3db40fbb3e6bb3c4890a21742c9a3132, type: 3}
+  - {fileID: 3808798516750148863, guid: 6c570d19b0a3e674aacae6ed72ee45d3, type: 3}
   starPrefab: {fileID: 5706054345480000102, guid: 835962f96b07da548bd4e961eb15cccf, type: 3}
   starSpawnChance: 0.4
   starOffsetY: 1.5
@@ -57,4 +59,3 @@ MonoBehaviour:
   difficultyIncreaseRate: 15
   blockSpeed: 5
   maxBlockSpeed: 15
-  timerText: {fileID: 0}

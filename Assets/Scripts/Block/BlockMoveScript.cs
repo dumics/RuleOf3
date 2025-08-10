@@ -20,11 +20,14 @@ public class BlockMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
-
-        if(transform.position.x < deadZone)
+        if(this.gameObject.layer != 8) // If enemy dont move
         {
-            Destroy(gameObject);
+            transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
+
+            if(transform.position.x < deadZone)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

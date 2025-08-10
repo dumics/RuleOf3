@@ -1,36 +1,48 @@
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using TMPro;
-using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
+using Mono.Cecil;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerScore;
-    private int highScore;
 
-    [Header("")]
-    [SerializeField] public BlockSpawnerScript blockSpawner;
-    [SerializeField] private GameObject gameOverPanel;
+    [Header("Prefabs for Gameplay Scene")]
+    public GameObject playerPrefab;
+    public GameObject blockSpawnerPrefab;
+
+    private GameObject playerInstance;
+    private GameObject blockSpawnerInstance;
 
     [Header("Optional UI")]
-    public TextMeshProUGUI timerText; // Link in Inspector if you want to show timer
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI highScoreText;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
+    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private GameObject gameOverPanel;
 
-    private bool gameOver = false;
+    [SerializeField] private bool gameOver = false;
     private float gameTime = 0f;
+    private int playerScore;
+    private int highScore;
 
-    private GameObject player;
-    private PlMov2 playerSC;
+    private void Awake()
+    {
+        // Player
+        if (playerPrefab != null && playerInstance == null)
+            playerInstance = Instantiate(playerPrefab, new Vector3(-5, -4, 1), Quaternion.identity);
+
+        // Block spawner
+        if (blockSpawnerPrefab != null && blockSpawnerInstance == null)
+                blockSpawnerInstance = Instantiate(blockSpawnerPrefab, new Vector3(20, 0, 0), Quaternion.identity);
+
+    }
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerSC = player.GetComponent<PlMov2>();
         highScore = PlayerPrefs.GetInt("HighScore");
-
         highScoreText.text = "HighScore: " + highScore.ToString();
-
+        
     }
 
     void Update()
@@ -64,14 +76,14 @@ public class LogicScript : MonoBehaviour
     {
         gameOver = true;
 
+        blockSpawnerInstance.GetComponent<BlockSpawnerScript>().StopSpawner();
+
         timerText.text = "";
         scoreText.text = "";
 
         gameOverPanel.SetActive(true);
 
-        if (blockSpawner != null) blockSpawner.StopSpawner();
 
-        //PlMov2 playerSC = player.GetComponent<PlMov2>();
 
         string infoText = "";
 
@@ -79,8 +91,8 @@ public class LogicScript : MonoBehaviour
         {
             case GameOverScript.GameOverReason.LeftBorder:
 
-                infoText= "The player is fell out.";
-                playerSC.TakeDamage(100); 
+                infoText = "The player is fell out.";
+                playerInstance.GetComponent<PlMov2>().BorderDamage();
                 break;
 
             case GameOverScript.GameOverReason.FlyKill:
@@ -103,30 +115,27 @@ public class LogicScript : MonoBehaviour
             else if (t.name == "HighScore") t.text = "HighScore: " + PlayerPrefs.GetInt("HighScore", playerScore).ToString();
         }
 
-        
 
+
+    }
+
+    public void ChangeHealth(float health)
+    {
+        healthText.text = "Health: " + health.ToString() + " / 100";
     }
 
     public void RestartGame()
     {
         gameOver = false;
-        
-        blockSpawner.StartSpawner();
-        playerSC.RestartPlayer();
+
+        blockSpawnerInstance.GetComponent<BlockSpawnerScript>().StartSpawner();
+        playerInstance.GetComponent<PlMov2>().RestartPlayer();
 
         gameOverPanel.SetActive(false);
         gameTime = 0f;
         playerScore = 0;
     }
 
-    public void MainMainu()
-    {
-        SceneControler.instance.LoadSceneByIndex(0);
-    }
 
-    public void StartGame()
-    {
-        SceneControler.instance.LoadSceneByIndex(1);
-    }
 
 }

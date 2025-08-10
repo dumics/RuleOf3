@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
+using TMPro;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -9,12 +11,11 @@ public class PlMov2 : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private float size;
     private float horizontalInput;
-
+    private int facingRight;
 
     [Header("Healt")]
-    [SerializeField] private float health;
+    [SerializeField] public float health;
     [SerializeField] private bool dead = false;
-
 
     [Header("Attack")]
     [SerializeField] private float damage;
@@ -37,7 +38,7 @@ public class PlMov2 : MonoBehaviour
     [Header("Multiple Jumps")]
     [SerializeField] private int extraJumps;
     private int jumpCounter;
-     
+
     [Header("Layers")]
     [SerializeField] private LayerMask groundLayer;
 
@@ -46,6 +47,12 @@ public class PlMov2 : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip deadSound;
     [SerializeField] private AudioClip attackSound;
+    #endregion
+
+    #region Spawn position
+    private float spawnPosX = -5;
+    private float spawnPosY = -4; 
+    private float spawnPosZ = 1;
     #endregion
 
     private Rigidbody2D body;
@@ -62,6 +69,11 @@ public class PlMov2 : MonoBehaviour
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
+    private void Start()
+    {
+        logic.ChangeHealth(health);
+    }
+
     private void Update()
     {
         if (dead) return; // jump out if player is dead
@@ -70,9 +82,15 @@ public class PlMov2 : MonoBehaviour
 
         //Flip player when moving left-right
         if (horizontalInput > 0.01f && !freezRotation)
+        {
             transform.localScale = new Vector3(size, size, 1);
+            facingRight = 1;
+        }
         else if (horizontalInput < -0.01f && !freezRotation)
+        {
             transform.localScale = new Vector3(-size, size, 1);
+            facingRight = -1;
+        }
 
         #region Animator parameters
         //Set animator parameters
@@ -167,6 +185,7 @@ public class PlMov2 : MonoBehaviour
         isAttacking = true;
         anim.SetTrigger("attack");
         SoundManager.instance.PlaySound(attackSound);
+        DealDamage();
     }
 
     public void EndAttack()
@@ -180,36 +199,43 @@ public class PlMov2 : MonoBehaviour
     public void DealDamage()
     {
         UnityEngine.Debug.Log("DealDamage();");
-
         
-
         // Attack logic
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
 
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             // all enemy's to take damage 
-            enemiesToDamage[i].GetComponent<EnemyScript>().TakeDamage(damage);
+            enemiesToDamage[i].GetComponent<EnemyScript>().TakeDamage(damage, (enemiesToDamage[i].transform.position - transform.position).normalized);
         }
     }
 
     public void TakeDamage(float damage)
     {
         health -= damage;
+        logic.ChangeHealth(health); // update health on screen
         if (health <= 0f)
         {
             SoundManager.instance.PlaySound(deadSound);
             dead = true;
             logic.GameOver(GameOverScript.GameOverReason.OutOfHealth);
-            //Destroy(gameObject); // destroy player
         }
+    }
+
+    public void BorderDamage()
+    {
+        health = 0;
+        logic.ChangeHealth(health);
+        SoundManager.instance.PlaySound(deadSound);
+        dead = true;
     }
 
     public void RestartPlayer()
     {
-        Vector3 spawnPosition = new Vector3(-5, -4, 1);
+        Vector3 spawnPosition = new Vector3(spawnPosX, spawnPosY, spawnPosZ);
         body.transform.position = spawnPosition;
         health = 100f;
+        logic.ChangeHealth(health);
         dead = false;
     }
 

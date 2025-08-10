@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class BlockSpawnerScript : MonoBehaviour
 {
@@ -21,10 +22,13 @@ public class BlockSpawnerScript : MonoBehaviour
     public float blockSpeed = 5f;
     public float maxBlockSpeed = 25f;
 
-    
     private float timer = 0f;
     private float difficultyTimer = 0f;
     private bool gameOver = false;
+    
+    private List<GameObject> spawnedObjects = new List<GameObject>();
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -67,8 +71,8 @@ public class BlockSpawnerScript : MonoBehaviour
             return;
         }
 
-        float lowestPoint = -4.5f;
-        float highestPoint = 0.5f;
+        float lowestPoint = -3.5f;
+        float highestPoint = 1f;
         float randomY = Random.Range(lowestPoint, highestPoint);
 
         Vector3 spawnPos = new Vector3(transform.position.x, randomY, 0);
@@ -81,26 +85,52 @@ public class BlockSpawnerScript : MonoBehaviour
         int randomIndex = Random.Range(0, blockPrefabs.Count);
         GameObject prefab = blockPrefabs[randomIndex];
 
-        BlockMoveScript blockMoveScript = prefab.GetComponent<BlockMoveScript>();
+        if (prefab.CompareTag("Enemy"))
+            SpawnEnemy(prefab, basePosition);
+        else
+            SpawnBlock(prefab, basePosition);
+    }
 
-        float scale = Random.Range(blockMoveScript.minSize, blockMoveScript.maxSize);
-        
-        BlockMoveScript moveScript = prefab.GetComponent<BlockMoveScript>();
-        moveScript.moveSpeed = blockSpeed;
+    #region Generating
+    void SpawnEnemy(GameObject enemy, Vector3 basePosition)
+    {
+        EnemyScript enemyScript = enemy.GetComponent<EnemyScript>();
+        float scale = Random.Range(enemyScript.minSize, enemyScript.maxSize);
 
-        Vector3 spawnPosition = new Vector3(basePosition.x, basePosition.y, basePosition.z);
-        GameObject instance = Instantiate(prefab, spawnPosition, Quaternion.identity);
-        
-        if (!instance.CompareTag("Enemy"))
-        {
-            float[] angles = { 0f, 15f, 30f, 45f, 60f };
-            float randomZRotation = angles[Random.Range(0, angles.Length)];
-            instance.transform.rotation = Quaternion.Euler(0f, 0f, randomZRotation);
-        }
 
+        Vector3 spawnPosition = new Vector3(basePosition.x, enemyScript.spawnY == 0 ? basePosition.y : enemyScript.spawnY , basePosition.z);
+        GameObject instance = Instantiate(enemy, spawnPosition, Quaternion.identity);
+        spawnedObjects.Add(instance);
+
+        instance.GetComponent<EnemyScript>().moveSpeed = blockSpeed;
         instance.transform.localScale = new Vector3(scale, scale, 1f);
 
-        #region Star Spawn
+        SpawnStar(instance, scale);
+
+    }
+
+    void SpawnBlock(GameObject block, Vector3 basePosition)
+    {
+        BlockMoveScript blockScript = block.GetComponent<BlockMoveScript>();
+        float scale = Random.Range(blockScript.minSize, blockScript.maxSize);
+
+        Vector3 spawnPosition = new Vector3(basePosition.x, basePosition.y, basePosition.z);
+        GameObject instance = Instantiate(block, spawnPosition, Quaternion.identity);
+        spawnedObjects.Add(instance);
+
+        instance.GetComponent<BlockMoveScript>().moveSpeed = blockSpeed;
+        instance.transform.localScale = new Vector3(scale, scale, 1f);
+
+        float[] angles = { 0f, 15f, 30f, 45f, 60f };
+        float randomZRotation = angles[Random.Range(0, angles.Length)];
+        instance.transform.rotation = Quaternion.Euler(0f, 0f, randomZRotation);
+
+        SpawnStar(instance, scale);
+
+    }
+
+    void SpawnStar(GameObject instance, float scale)
+    {
         if (starPrefab != null && Random.value < starSpawnChance)
         {
             Vector3 starPosition = new Vector3(
@@ -109,16 +139,22 @@ public class BlockSpawnerScript : MonoBehaviour
                 instance.transform.position.z
             );
 
-            Instantiate(starPrefab, starPosition, Quaternion.identity);
-            BlockMoveScript starMoveScript = starPrefab.GetComponent<BlockMoveScript>();
-            starMoveScript.moveSpeed = blockSpeed;
+            GameObject starObj = Instantiate(starPrefab, starPosition, Quaternion.identity);
+            starObj.GetComponent<BlockMoveScript>().moveSpeed = blockSpeed;
+            spawnedObjects.Add(starObj);
         }
-        #endregion
-
     }
-
+    #endregion
     public void StopSpawner()
     {
+
+        foreach (GameObject obj in spawnedObjects)
+        {
+            if (obj != null)
+                Destroy(obj);
+        }
+        spawnedObjects.Clear(); 
+
         gameOver = true;
     }
 

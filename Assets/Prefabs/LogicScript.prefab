@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab004b67cd45f054f8b09b02e8693dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
-  scoreText: {fileID: 0}
+  playerPrefab: {fileID: 2046683999956169529, guid: 186d54b2bd6fb4a41937003e310a9fac, type: 3}
+  blockSpawnerPrefab: {fileID: 3330801168936114016, guid: 881015219052ca249a5fb9854efca2b3, type: 3}
+  backgroundSpawnerPrefab: {fileID: 3301432224908348758, guid: c0b45773c3ea8434cb73737e79a0f74c, type: 3}
+  mainMenuBackgroundSpawnerPrefab: {fileID: 8781810426976755162, guid: e1374218c5b95eb49b1b85758991a606, type: 3}
+  gameOver: 0

@@ -25,4 +25,6 @@ public class GameOverScript : MonoBehaviour
             logic.GameOver(reason);
         }
     }
+
+    
 }
