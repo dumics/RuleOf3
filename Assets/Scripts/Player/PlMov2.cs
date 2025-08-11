@@ -1,7 +1,3 @@
-using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
-using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlMov2 : MonoBehaviour

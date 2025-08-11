@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using TMPro;
-using UnityEngine.UIElements;
 using System.Collections;
 
 public class BlockSpawnerScript : MonoBehaviour
@@ -151,16 +149,6 @@ public class BlockSpawnerScript : MonoBehaviour
     #endregion
     public void StopSpawner()
     {
-
-        //foreach (GameObject obj in spawnedObjects)
-        //{
-        //    if (obj != null)
-        //        Destroy(obj);
-        //}
-        //spawnedObjects.Clear(); 
-
-        //gameOver = true;
-
         gameOver = true;
 
         if (spawnCoroutine != null) StopCoroutine(spawnCoroutine);

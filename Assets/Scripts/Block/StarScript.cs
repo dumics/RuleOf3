@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class StarScript : MonoBehaviour
@@ -6,8 +5,7 @@ public class StarScript : MonoBehaviour
 
     public int starAward = 30;
 
-    public LogicScript logic;
-    public Animator animator;
+    private LogicScript logic;
 
     [SerializeField] private AudioClip starCollectedSound;
    
@@ -23,7 +21,6 @@ public class StarScript : MonoBehaviour
             Destroy(gameObject);
             logic.addScore(starAward);
             SoundManager.instance.PlaySound(starCollectedSound);
-            //animator.SetTrigger("Collected");
         }
     }
 }

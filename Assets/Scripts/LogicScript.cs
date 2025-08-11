@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using UnityEditor.SearchService;
-using Mono.Cecil;
 
 public class LogicScript : MonoBehaviour
 {
@@ -136,6 +134,10 @@ public class LogicScript : MonoBehaviour
     }
     public void RestartGame()
     {
+        if (isPaused)
+        {
+            UnPauseGame();
+        }
 
         Debug.Log("Function called!!");
         gameOver = false;
@@ -148,13 +150,11 @@ public class LogicScript : MonoBehaviour
         gameOverPanel.SetActive(false);
         gameTime = 0f;
         playerScore = 0;
+        scoreText.text = "Score: " + playerScore.ToString();
     }
 
     public void PauseGame()
     {
-        // Pause spawner
-        //BlockSpawnerScript spawner = blockSpawnerInstance.GetComponent<BlockSpawnerScript>();
-        //spawner.PauseSpawner();
         pauseGamePanel.SetActive(true);
         isPaused = true;
         Time.timeScale = 0;
@@ -166,6 +166,13 @@ public class LogicScript : MonoBehaviour
         pauseGamePanel.SetActive(false);
         isPaused = false;
         Time.timeScale = 1;
+    }
+
+    public void MainMenu()
+    {
+        if (isPaused)
+            UnPauseGame();
+        SceneManager.LoadSceneAsync(0);
     }
 
 }

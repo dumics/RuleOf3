@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0ad83ecb72d51418384e98d1050004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starAward: 0
+  starAward: 30
   logic: {fileID: 0}
   animator: {fileID: 0}
   starCollectedSound: {fileID: 8300000, guid: dbad5b0b0a97ba74da3b2b32caa90943, type: 3}

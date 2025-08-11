@@ -12,6 +12,8 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private float knockbackDuration = 0.3f;
     [SerializeField] private bool killOnContact;
 
+    private bool takingDamage = false;
+
     [Header("Sizing")]
     public float minSize = 0;
     public float maxSize = 0;
@@ -70,6 +72,7 @@ public class EnemyScript : MonoBehaviour
         //Debug.Log("Damage taken!!");
         SoundManager.instance.PlaySound(hurt);
         animator.SetBool("hit", true);
+        takingDamage = true;
 
         // Apply knockback
         if (rb != null)
@@ -85,6 +88,7 @@ public class EnemyScript : MonoBehaviour
     public void hitDone()
     {
         animator.SetBool("hit", false);
+        takingDamage = false;
     }
 
     public void dieDone()
@@ -99,20 +103,18 @@ public class EnemyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Collision with player
         if (collision.gameObject.layer == 6)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                PlMov2 scr = player.GetComponent<PlMov2>();
-                if (scr != null)
-                {
-                    if (killOnContact)
-                        scr.TakeDamage(100);
-                    else
-                        scr.TakeDamage(damage);
-                }
-            }
+            if (player == null) return;
+
+            PlMov2 scr = player.GetComponent<PlMov2>();
+            if (scr == null) return;
+
+            // Cannot hurt player while enemy taking damage
+            if(!takingDamage) scr.TakeDamage(killOnContact ? 100 : damage);
+
         }
     }
 
