@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class BackgroundSpawnerScript : MonoBehaviour
 {
@@ -22,23 +23,27 @@ public class BackgroundSpawnerScript : MonoBehaviour
 
     void Start()
     {
-        // Spawn initial sequence
+        // Start a coroutine for each background type
         foreach (BackgroundData bg in backgrounds)
         {
             bg.lastSpawned = SpawnPiece(bg, 0f);
+            StartCoroutine(BackgroundSpawnerLoop(bg));
         }
     }
 
-    void Update()
+    IEnumerator BackgroundSpawnerLoop(BackgroundData bg)
     {
-        foreach (BackgroundData bg in backgrounds)
+        while (true)
         {
-            if (bg.lastSpawned != null && bg.lastSpawned.transform.position.x <= spawnTriggerX)
-            {
-                // Spawn new one ahead of the current
-                float newX = bg.lastSpawned.transform.position.x + pieceWidth;
-                bg.lastSpawned = SpawnPiece(bg, newX);
-            }
+            // Wait until last piece crosses the trigger
+            yield return new WaitUntil(() =>
+                bg.lastSpawned != null &&
+                bg.lastSpawned.transform.position.x <= spawnTriggerX
+            );
+
+            // Spawn new one ahead
+            float newX = bg.lastSpawned.transform.position.x + pieceWidth;
+            bg.lastSpawned = SpawnPiece(bg, newX);
         }
     }
 
@@ -52,8 +57,6 @@ public class BackgroundSpawnerScript : MonoBehaviour
         {
             moveScript.moveSpeed = bg.moveSpeed;
         }
-
-        piece.transform.position = spawnPos;
 
         return piece;
     }

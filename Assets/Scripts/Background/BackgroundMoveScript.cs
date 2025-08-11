@@ -9,14 +9,6 @@ public class BackgroundMoveScript : MonoBehaviour
     public float spawnTrigger = 0f; // X coordinate to trigger next spawn
     public float spawnCoordinateY = 0f;
     
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;

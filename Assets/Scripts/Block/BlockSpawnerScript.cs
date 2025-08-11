@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UIElements;
+using System.Collections;
 
 public class BlockSpawnerScript : MonoBehaviour
 {
@@ -25,41 +26,44 @@ public class BlockSpawnerScript : MonoBehaviour
     private float timer = 0f;
     private float difficultyTimer = 0f;
     private bool gameOver = false;
-    
+    private bool isPaused = false;
+
     private List<GameObject> spawnedObjects = new List<GameObject>();
 
+    private Coroutine spawnCoroutine;
+    private Coroutine difficultyCoroutine;
 
+    private float initialSpawnRate;
+    private float initialBlockSpeed;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+        initialSpawnRate = spawnRate;
+        initialBlockSpeed = blockSpeed;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
+        StartSpawner();
+    }
 
-        if (!gameOver)
+    IEnumerator SpawnLoop()
+    {
+        while (!gameOver)
         {
-            // BLOCK SPAWNING
-            if (timer < spawnRate)
-            {
-                timer += Time.deltaTime;
-            }
-            else
-            {
-                SpawnBlock();
-                timer = 0;
-            }
+            SpawnBlock();
+            yield return new WaitForSeconds(spawnRate);
+        }
+    }
 
-            // DIFFICULTY INCREASE
-            difficultyTimer += Time.deltaTime;
-            if (difficultyTimer >= difficultyIncreaseRate)
-            {
-                spawnRate = Mathf.Max(minSpawnRate, spawnRate - spawnRateDecrease);
-                blockSpeed = Mathf.Min(maxBlockSpeed, blockSpeed + 1);
-                difficultyTimer = 0;
-            }
+    IEnumerator DifficultyLoop()
+    {
+        while (!gameOver)
+        {
+            yield return new WaitForSeconds(difficultyIncreaseRate);
+
+            spawnRate = Mathf.Max(minSpawnRate, spawnRate - spawnRateDecrease);
+            blockSpeed = Mathf.Min(maxBlockSpeed, blockSpeed + 1);
         }
     }
 
@@ -148,19 +152,61 @@ public class BlockSpawnerScript : MonoBehaviour
     public void StopSpawner()
     {
 
-        foreach (GameObject obj in spawnedObjects)
-        {
-            if (obj != null)
-                Destroy(obj);
-        }
-        spawnedObjects.Clear(); 
+        //foreach (GameObject obj in spawnedObjects)
+        //{
+        //    if (obj != null)
+        //        Destroy(obj);
+        //}
+        //spawnedObjects.Clear(); 
+
+        //gameOver = true;
 
         gameOver = true;
+
+        if (spawnCoroutine != null) StopCoroutine(spawnCoroutine);
+        if (difficultyCoroutine != null) StopCoroutine(difficultyCoroutine);
+
+        foreach (GameObject obj in spawnedObjects)
+        {
+            if (obj != null) Destroy(obj);
+        }
+        spawnedObjects.Clear();
+
     }
 
     public void StartSpawner()
     {
-        gameOver = false;
+        if (!isPaused)
+        {
+            if (spawnCoroutine != null) StopCoroutine(spawnCoroutine);
+            if (difficultyCoroutine != null) StopCoroutine(difficultyCoroutine);
+            
+            gameOver = false;
+        }
+        else
+        {
+            // game was paused
+            isPaused = false;
+        }
+
+
+        spawnCoroutine = StartCoroutine(SpawnLoop());
+        difficultyCoroutine = StartCoroutine(DifficultyLoop());
+    }
+
+    public void ResetSpawner()
+    {
+        spawnRate = initialSpawnRate;
+        blockSpeed = initialBlockSpeed;
+
+    }
+
+    public void PauseSpawner()
+    {
+        isPaused = true;
+        if (spawnCoroutine != null) StopCoroutine(spawnCoroutine);
+        if (difficultyCoroutine != null) StopCoroutine(difficultyCoroutine);
+
     }
 
 }

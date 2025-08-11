@@ -20,8 +20,11 @@ public class LogicScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI highScoreText;
     [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject pauseGamePanel;
 
     [SerializeField] private bool gameOver = false;
+    [SerializeField] private bool isPaused = false;
+
     private float gameTime = 0f;
     private int playerScore;
     private int highScore;
@@ -54,6 +57,14 @@ public class LogicScript : MonoBehaviour
             if (timerText != null)
             {
                 timerText.text = "Time: " + Mathf.FloorToInt(gameTime).ToString();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (isPaused)
+                    UnPauseGame();
+                else
+                    PauseGame();
             }
         }
     }
@@ -123,21 +134,38 @@ public class LogicScript : MonoBehaviour
     {
         healthText.text = "Health: " + health.ToString() + " / 100";
     }
-
     public void RestartGame()
     {
 
         Debug.Log("Function called!!");
         gameOver = false;
 
-        blockSpawnerInstance.GetComponent<BlockSpawnerScript>().StartSpawner();
+        BlockSpawnerScript spawner = blockSpawnerInstance.GetComponent<BlockSpawnerScript>();
         playerInstance.GetComponent<PlMov2>().RestartPlayer();
+        spawner.ResetSpawner();
+        spawner.StartSpawner();
 
         gameOverPanel.SetActive(false);
         gameTime = 0f;
         playerScore = 0;
     }
 
+    public void PauseGame()
+    {
+        // Pause spawner
+        //BlockSpawnerScript spawner = blockSpawnerInstance.GetComponent<BlockSpawnerScript>();
+        //spawner.PauseSpawner();
+        pauseGamePanel.SetActive(true);
+        isPaused = true;
+        Time.timeScale = 0;
 
+    }
+
+    public void UnPauseGame()
+    {
+        pauseGamePanel.SetActive(false);
+        isPaused = false;
+        Time.timeScale = 1;
+    }
 
 }
